@@ -50,5 +50,3 @@ export default function TextForm(props) {
     )
 }
 
-// word[0].toUpperCase() + word.slice(1).toLowerCase())
-// text[0].toUpperCase() + text.slice(1).toLowerCase())

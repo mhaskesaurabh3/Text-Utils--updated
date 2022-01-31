@@ -1,5 +1,4 @@
 import './App.css';
-import About from './Components/About';
 import Navbar from './Components/Navbar';
 import TextForm from './Components/TextForm';
 import React, { Fragment, useState } from 'react'
@@ -33,18 +32,18 @@ function App() {
     })
   }
   return (
-    <>
-      <div className="my cotainer my-3">
+    <> 
+    <Navbar title='TextUtils' mode={Mode} toggleMode={toggleMode} aboutText="About us" />
+      <div className="my container my-3">
         <Router>
           <Fragment>
-          <Navbar title='TextUtils' mode={Mode} toggleMode={toggleMode} aboutText="About us" />
+         
           <Alert alert={alert} />
           <TextForm heading="Enter your text here" />
             <Routes>
               {/* <Route exact path="/#" element={<Alert alert={alert} />} /> */}
-                  <Route exact path="/about" element={<About />} />
-              {/* <About /> */}
-              {/* <Route exact path="/#" element={<TextForm heading="Enter your text here" />} /> */}
+                  {/* <Route exact path="/about" element={<About />} /> */}
+
               </Routes>
           </Fragment>
         </Router>
