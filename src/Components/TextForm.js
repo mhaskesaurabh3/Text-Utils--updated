@@ -18,10 +18,10 @@ export default function TextForm(props) {
         setText(event.target.value);
     }
     const handleTitleClick = (str) => {
-      return str.toLowerCase().split(' ').map(function (word) {
+      let titCase = str.toLowerCase().split(' ').map(function (word) {
     return (word.charAt(0).toUpperCase() + word.slice(1));
   }).join(' ');
-        setText(str);
+        setText(titCase);
     }
     // let setStyle={
     //     if(props.mode==='dark'){
