@@ -14,11 +14,11 @@ export default function TextForm(props) {
         setText(newText);
     }
     const handleOnChange = (event) => {
-        // console.log('On change was triggered');
+        console.log('On change was triggered');
         setText(event.target.value);
     }
     const handleTitleClick = () => {
-        let titCase = text[0].toUpperCase() + text.substr(1).toLowerCase();
+        let titCase = text[0].toUpperCase() + slice[1].join(" ");
         setText(titCase);
     }
     // let setStyle={
