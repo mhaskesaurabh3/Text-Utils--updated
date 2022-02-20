@@ -18,7 +18,7 @@ export default function TextForm(props) {
         setText(event.target.value);
     }
     const handleTitleClick = () => {
-        let titCase = text[0].toUpperCase() + slice[1].join(" ");
+        let titCase = text[0].toUpperCase() + slice[1]
         setText(titCase);
     }
     // let setStyle={
